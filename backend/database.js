@@ -2,10 +2,10 @@ import { get } from 'mongoose';
 import mysql from 'mysql2'
 
 const pool=mysql.createPool({
-    host:'127.0.0.1',
-    user:'root',
-    password:'Suprotiv1!',
-    database:'letterbox'
+    host:LOCALHOST,
+    user:USERNAME,
+    password:PASSWORD,
+    database:DATABSE_NAME
 }).promise()
 
 export async function getdata()
